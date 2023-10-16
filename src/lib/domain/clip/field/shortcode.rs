@@ -54,10 +54,3 @@ impl From<&str> for ShortCode {
     }
 }
 
-impl FromStr for ShortCode {
-    type Err = ClipError;
-
-    fn from_str(s: &str) -> Result<Self, Self::Err> {
-        Ok(Self(s.into()))
-    }
-}
